@@ -1,0 +1,84 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.movie {
+    background-color: var(--azul-claro);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    position: relative; /*adicionado*/
+    font-weight: bold;
+    margin: 1rem;
+    overflow: hidden;
+    width: 300px;
+}
+.movie:hover .sinopse {
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    overflow: auto;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.movie-img {
+    height: 400px;
+    width: 300px;
+}
+.movie-info {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+.movie-info h2 {
+    display: block;
+}
+.movie-info h3 {
+    background-color: var(--azul-escuro);
+    display: block;
+    margin-left: 1rem;
+    padding: 0.3rem;
+}
+.movie-info h3.green{
+    color: #68df68;
+}
+.movie-info h3.yellow{
+    color: #dddd5a;
+}
+.movie-info h3.red{
+    color: #e24949;
+}
+.div-notfound {
+    align-items: center;
+    display: flex;
+    height: calc(100vh - 120px);
+    justify-content: center;
+    width: 100%;
+}
+.notfound {
+    color: yellow;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.sinopse {
+    background-color: black;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.sinopse-span {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 670px){
+    main {
+        justify-content: center;
+    }
+}

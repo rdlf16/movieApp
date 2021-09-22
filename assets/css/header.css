@@ -1,0 +1,47 @@
+header {
+    align-items: center;
+    background-color: var(--azul-claro);
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
+}
+.header-titulo {
+    color: white;
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+.header-titulo-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.form {
+    width: 400px;
+}
+.input {
+    background-color: transparent;
+    border: 2px solid #22274D;
+    border-color: var(--azul-escuro);
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+.input:focus {
+    outline: none;
+}
+.input::placeholder {
+    color: var(--azul-muitoClaro);
+}
+@media screen and (max-width: 670px) {
+    header {
+        justify-content: center;
+    }
+    .form {
+        width: 250px;
+    }
+}
