@@ -41,7 +41,14 @@ header {
     header {
         justify-content: center;
     }
+    .header-titulo {
+        font-size: 0.5rem;
+        display: inline-block;
+        letter-spacing: 0.3px;
+        margin-right: 1rem;
+        flex-grow: 2;
+    }
     .form {
-        width: 250px;
+        width: 55%;
     }
 }
